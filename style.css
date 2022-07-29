@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-width: 1000px;
+  font-family: "Kanit", sans-serif;
+  background-color: black;
+}
+
+#cssVueStyle {
+  display: grid;
+}
+.title {
+  margin: 1rem;
+  color: rgb(246, 244, 238);
+  font-size: 3rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+.box {
+  width: 0px;
+
+  transition: all 1500ms;
+}
+.container {
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+  color: red;
+  background-color: rgba(19, 213, 227, 0.804);
+  width: 100vw;
+  height: 600px;
+  border-radius: 10px;
+  align-items: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ulElement {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  justify-content: left;
+  border-right: 15px dashed black;
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem;
+  align-items: baseline;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.d-md-block {
+  text-align: center;
+  margin-left: 1rem;
+}
+.d-md-block button {
+  width: 100%;
+  margin-left: 2rem;
+  margin: auto;
+}
+
+li:nth-child(1),
+li:nth-child(2),
+li:nth-child(3),
+li:nth-child(4) {
+  padding-left: 7.5rem;
+  background: transparent;
+  background-position: right;
+  background-repeat: no-repeat;
+  color: black;
+  margin-left: 1rem;
+  display: grid;
+  height: 60px;
+  transition: all ;
+}
+
+li:nth-child(1) {
+  background-image: url("images/red.png");
+  background-size: 110px;
+}
+li:nth-child(2) {
+  background-image: url("images/blue.png");
+  background-size: 120px;
+}
+li:nth-child(3) {
+  background-image: url("images/orange.png");
+  background-size: 110px;
+}
+li:nth-child(4) {
+  background-image: url("images/green.png");
+  background-size: 120px;
+}
+
+.textResult {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+.btn {
+  height: 60px;
+  font-size: 1.6rem;
+  border-radius: 15px;
+}
+.btn-group {
+  width: 102%;
+}
+.box2 {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
