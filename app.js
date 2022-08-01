@@ -8,14 +8,15 @@ const cssVue = Vue.createApp({
         green: 0,
         myArray: [this.red, this.blue, this.orange, this.green],
 
-        isActive: true,
         intervalTime: 100,
         winner: "",
         result: true,
         wert: 10,
         widthNum: 1230,
         myInterval: "",
-        myTimeout: ""
+        myTimeout: "",
+        myCar:"",
+        selectColor:true
 
       };
     },
@@ -28,8 +29,13 @@ const cssVue = Vue.createApp({
           document.querySelectorAll(".box")[0].style.width = this.red + 'px'
 
         } else {
-          this.winner = "Rotes Auto gewonnen"
-
+        
+          if(this.myCar=="Red"){
+            this.winner = "Your guess is correct... Red Car won"
+          }else{
+            this.winner = "Your guess is wrong!!! Red Car won"
+          }
+     
           this.stop()
           this.mySettimeout()
         }
@@ -42,7 +48,12 @@ const cssVue = Vue.createApp({
 
 
         } else {
-          this.winner = "Blaues Auto gewonnen"
+         
+          if(this.myCar=="Blue"){
+            this.winner = "Your guess is correct... Blue Car won"
+          }else{
+            this.winner = "Your guess is wrong!!! Blaues Car won"
+          }
           this.stop()
           this.mySettimeout()
 
@@ -57,7 +68,12 @@ const cssVue = Vue.createApp({
 
         } else {
 
-          this.winner = "Oranges Auto gewonnen"
+       
+          if(this.myCar=="Orange"){
+            this.winner = "Your guess is correct... Orange car won"
+          }else{
+            this.winner = "Your guess is wrong!!! Orange car won"
+          }
           this.stop()
           this.mySettimeout()
         }
@@ -70,7 +86,12 @@ const cssVue = Vue.createApp({
 
         } else {
 
-          this.winner = "Grünes Auto gewonnen"
+      
+          if(this.myCar=="Green"){
+            this.winner = "Your guess is correct... Green car won"
+          }else{
+            this.winner = "Your guess is wrong!!! Green car won"
+          }
           this.stop()
           this.mySettimeout()
 
@@ -78,12 +99,15 @@ const cssVue = Vue.createApp({
       },
 
       start() {
+if(!this.myCar && this.red==0){
+  alert("Please select your car")
+   }else{ 
 
         this.myInterval = setInterval(this.myRed, this.intervalTime);
         this.myInterval2 = setInterval(this.myBlue, this.intervalTime);
         this.myInterval3 = setInterval(this.myOrange, this.intervalTime);
         this.myInterval4 = setInterval(this.myGreen, this.intervalTime);
-
+      }
       },
       stop() {
 
@@ -91,6 +115,9 @@ const cssVue = Vue.createApp({
         clearInterval(this.myInterval2);
         clearInterval(this.myInterval3);
         clearInterval(this.myInterval4);
+        this.selectColor = !this.selectColor
+      
+      
 
       },
 
@@ -102,6 +129,7 @@ const cssVue = Vue.createApp({
           this.green = 0,
           this.wert = 0,
           window.location.reload();
+        
       },
 
 
