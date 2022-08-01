@@ -17,15 +17,29 @@
   <section id="newProject">
     <div class="container" :style="colorChange">
       <h1 class="title">Random Car Race </h1>
-      <ul class="ulElement" v-if="isActive">
+      <ul class="ulElement" >
         <li class=" box" v-for="value in myArray">{{value}}</li>
 
 
       </ul>
       <div class="textResult" :style="colorChange" v-if="result">
-        <p id="winner"> {{winner}}</p>
 
+        <p id="winner"> {{winner}}</p>
+        <div class="guess" v-if="selectColor">
+     
+       
+          <select :style="{backgroundColor: myCar}" style class="form-select form-select-lg mb-3"v-model="myCar" aria-label=".form-select-lg " >
+            <option value="" disabled selected >Select Your Car</option>
+            <option style="background-color:red">red</option>
+            <option style="background-color:blue">blue</option>
+            <option style="background-color:orange">orange</option>
+            <option style="background-color:green">green</option>
+          </select>
+    
+        </div>
       </div>
+
+      
       <div class="box2">
 
         <div class="d-flex gap-2 btn-group">
