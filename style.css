@@ -35,7 +35,7 @@ body {
   place-items: center;
   margin-top: 3rem;
   color: red;
-  background-color: rgba(19, 213, 227, 0.804);
+  background-color: rgb(89, 201, 245);
   width: 100vw;
   height: 600px;
   border-radius: 10px;
@@ -120,4 +120,18 @@ li:nth-child(4) {
   width: 100%;
   display: grid;
   place-items: center;
+}
+.guess{
+  font-size: 1.3rem;
+  display: flex;
+}
+#winner{
+  color: white;
+}
+.form-select{
+width: 333px;
+text-align: center;
+border: none;
+background-color: rgb(31, 91, 4);
+color: white;
 }
