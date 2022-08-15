@@ -11,7 +11,7 @@ const cssVue = Vue.createApp({
         intervalTime: 100,
         winner: "",
         result: true,
-        wert: 10,
+        wert: 15,
         widthNum: 1230,
         myInterval: "",
         myTimeout: "",
