@@ -30,7 +30,7 @@ const cssVue = Vue.createApp({
 
         } else {
         
-          if(this.myCar=="Red"){
+          if(this.myCar=="red"){
             this.winner = "Your guess is correct... Red Car won"
           }else{
             this.winner = "Your guess is wrong!!! Red Car won"
@@ -49,7 +49,7 @@ const cssVue = Vue.createApp({
 
         } else {
          
-          if(this.myCar=="Blue"){
+          if(this.myCar=="blue"){
             this.winner = "Your guess is correct... Blue Car won"
           }else{
             this.winner = "Your guess is wrong!!! Blaues Car won"
@@ -69,7 +69,7 @@ const cssVue = Vue.createApp({
         } else {
 
        
-          if(this.myCar=="Orange"){
+          if(this.myCar=="orange"){
             this.winner = "Your guess is correct... Orange car won"
           }else{
             this.winner = "Your guess is wrong!!! Orange car won"
@@ -87,7 +87,7 @@ const cssVue = Vue.createApp({
         } else {
 
       
-          if(this.myCar=="Green"){
+          if(this.myCar=="green"){
             this.winner = "Your guess is correct... Green car won"
           }else{
             this.winner = "Your guess is wrong!!! Green car won"
